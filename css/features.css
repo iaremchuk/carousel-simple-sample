@@ -1,0 +1,114 @@
+
+.features {
+    background: linear-gradient(0deg, rgb(22, 23, 33) 0%, rgb(23, 16, 41) 100%);
+    font-family: 'Lato', sans-serif;
+    min-width: 320px;
+    height: 100vh;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+
+.features__title {
+    color: var(--main-color);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+.features__description,
+.features__joke {
+    color: var(--accent-color);
+    font-size: 18px;
+    line-height: 28px;
+    margin: 25px auto 45px;
+    text-align: center;
+    width: 80%;
+}
+
+.features__joke {
+    font-size: 25px;
+}
+
+.features__slider {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+}
+
+.features__slides {
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+.features__button {
+    align-items: center;
+    background: var(--features-button-color);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+}
+
+.features__button:first-child>svg {
+    transform: rotate(180deg);
+}
+
+.features__button>svg {
+    fill: var(--main-color);
+    height: 12px;
+    width: 12px;
+}
+
+.slide__image {
+    height: 250px;
+}
+
+.slide__heading {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.slide__description {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+@media (min-width: 760px) {
+    .features__button {
+        height: 32px;
+        width: 32px;
+    }
+
+    .features__button>svg {
+        fill: var(--main-color);
+        height: 20px;
+        width: 20px;
+    }
+
+    .features__slide {
+        width: 48%;
+    }
+}
+
+@media (min-width: 977px) {
+    .features__button {
+        background: none;
+    }
+
+    .features__button>svg {
+        fill: var(--features-button-color);
+        height: 30px;
+        width: 30px;
+    }
+
+    .features__slide {
+        width: 30%;
+    }
+}
